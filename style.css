@@ -1,0 +1,100 @@
+/*
+Created by: Preston Luie 01971155
+Github account: PLuie88
+10/26/24
+*/
+
+
+/*sets table border color, and has borders go to one line for smoother appearance*/
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/*sets text color for error messages to red*/
+#minCSpan,
+#maxCSpan,
+#minRSpan,
+#maxRSpan {
+    color: red;
+}
+
+/*sets the background color and size for the textboxes that are for user input*/
+input {
+    background-color: lightgrey;
+    width: 80px;
+}
+
+/*background for entire page*/
+body {
+    background-color: lightslategrey;
+}
+
+
+/*Sets the box around the entirety of the content in the body (user input area, corresponding text, submit button) and centers it*/
+#content {
+    border: 2px solid black;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/*Centers the table*/
+table {
+    margin: auto;
+}
+
+/*formats the updated table to be scrollable both vertically and horizontally and to have everything in the center*/
+#tableHolder {
+    overflow: auto;
+    max-height: 400px;
+    margin: auto;
+}
+
+
+
+/*Makes sure that all of the boxes are uniform regarding size*/
+th,
+td,
+tr {
+    text-align: center;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+/*even children of the rows have greyish background (for readability)*/
+tr:nth-child(even) {
+    background-color: rgb(205, 226, 184);
+}
+
+
+/*odd children of the rows have tea greenish background (for readability)*/
+tr:nth-child(odd) {
+    background-color: rgb(144, 165, 169);
+}
+
+
+/*https://www.w3schools.com/howto/howto_js_sticky_header.asp */
+th {
+    background-color: black;
+    color: beige;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.error { /*Sets slider color to red and adds some margin to prevent overlap with user input box*/
+    color: red;
+    margin: 5px;
+}
+
+.slider { /*Prevents the sliders from overextending and looking bad for the user*/
+    width: 180px;
+}
+
+#submitButton { /*makes all of the text in the button fit*/
+    width: fit-content;
+}

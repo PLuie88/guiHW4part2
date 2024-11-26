@@ -1,0 +1,70 @@
+<!--
+Created by: Preston Luie 01971155
+Github account: PLuie88
+10/26/24
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+  <meta charset="utf-8">
+  <title>Dynamic Multiplication table</title>
+
+</head>
+
+<body>
+  <div id="content">
+    <form id="tableBounds"> <!--Form to get user input for max and min-->
+
+      <!--Has placehodler minCspan and maxCspan which get updated if the bounds are not correct through the js file-->
+      <h3>Column Bounds</h3>
+      <label for="minC">Column Min: </label>
+      <input type="text" id="minC" name="minC"><br><br>
+      <div id="minCSpan"></div>
+      <div id="minCSlider" class="slider"></div><br></br>
+      <label for="maxC">Column Max: </label>
+      <input type="text" id="maxC" name="maxC"><br><br>
+      <div id="maxCSpan"></div>
+      <div id="maxCSlider" class="slider"></div> <br></br>
+
+
+      <!--Has placehodler minRspan and maxRspan which get updated if the bounds are not correct through the js file-->
+      <h3>Row Bounds</h3>
+      <label for="minRow">Row Min: </label>
+      <input type="text" id="minRow" name="minRow"><br><br>
+      <div id="minRSpan"></div>
+      <div id="minRSlider" class="slider"></div> <br></br>
+      <label for="maxRow">Row Max: </label>
+      <input type="text" id="maxRow" name="maxRow"><br><br>
+      <div id="maxRSpan"></div>
+      <div id="maxRSlider" class="slider"></div> <br></br>
+
+      <!--the return false for the submit button make sure that the form does not reset the page when submit-->
+      <!--<input type="submit" id="submitButton" onclick="subButtonClicked(); return false;"> JUST COMMENTED OUT-->
+      <input type="submit" id="submitButton" value="Submit & Create Tab">
+    </form>
+  </div>
+  <div id="tableHolder"></div>
+
+  <!--<button type="button" id="deleteCurTab">Delete Current tab</button>
+  <button type="button" id="deleteAllTabs">Delete all tabs</button> -->
+  <!--place holder to create the tabs-->
+  <div id="tabHoldTest">
+    <ul>
+      
+    </ul>
+  </div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"></script>
+<script src="./table.js"></script>
+
+</html>
